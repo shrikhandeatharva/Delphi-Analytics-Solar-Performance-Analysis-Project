@@ -20,9 +20,9 @@ COLOR_PALETTE = {
 # Load Data
 @st.cache_data
 def load_data():
-    site1_df = pd.read_csv(r"E:\Delphi Analytics Project Work\cleaned_solar_data_Site_1.csv", parse_dates=['indregTC1_timestamp'], dayfirst=True)
-    site2_df = pd.read_csv(r"E:\Delphi Analytics Project Work\cleaned_solar_data_Site_2.csv", parse_dates=['indregTC2_timestamp'], dayfirst=True)
-    site3_df = pd.read_csv(r"E:\Delphi Analytics Project Work\cleaned_solar_data_Site_3.csv", parse_dates=['indregTC3_timestamp'], dayfirst=True)
+    site1_df = pd.read_csv("cleaned_solar_data_Site_1.csv", parse_dates=['indregTC1_timestamp'], dayfirst=True)
+    site2_df = pd.read_csv("cleaned_solar_data_Site_2.csv", parse_dates=['indregTC2_timestamp'], dayfirst=True)
+    site3_df = pd.read_csv("cleaned_solar_data_Site_3.csv", parse_dates=['indregTC3_timestamp'], dayfirst=True)
     return site1_df, site2_df, site3_df
 
 site1_df, site2_df, site3_df = load_data()
